@@ -1,0 +1,88 @@
+---
+// src/components/Sections/Home/Facilities.astro - daftar fasilitas homestay di homepage.
+import SectionHeader from "@components/Sections/Global/SectionHeader.astro";
+import { getLocale } from "@i18n";
+import { annotationsDe, styleDuBloc } from "@moteur/annotations";
+import Pastilles from "@moteur/Pastilles.astro";
+
+const locale = getLocale(Astro);
+const ed = annotationsDe(Astro, "facilities");
+const isEn = locale === "en";
+
+const items = isEn
+  ? [
+      {
+        title: "Stay essentials",
+        details: ["Hair dryer", "Towels", "Bed sheets", "Soap", "Hangers"],
+      },
+      {
+        title: "Comfort & living",
+        details: ["WiFi", "Air conditioning", "Smart TV", "Kitchen", "Fridge", "Cookware"],
+      },
+      {
+        title: "Safety & leisure",
+        details: ["CCTV", "Security cameras", "Kids pool", "Garage", "Lounge space"],
+      },
+    ]
+  : [
+      {
+        title: "Kebutuhan tinggal",
+        details: ["Hair dryer", "Handuk", "Seprai", "Sabun", "Gantungan baju"],
+      },
+      {
+        title: "Kenyamanan & hunian",
+        details: ["Wifi", "Air conditioning / AC", "Smart TV", "Dapur", "Kulkas", "Peralatan masak"],
+      },
+      {
+        title: "Keamanan & rekreasi",
+        details: ["CCTV", "Kamera pengawas", "Kolam renang anak", "Garasi", "Area santai"],
+      },
+    ];
+---
+
+<section
+  class="border-border border-t bg-surface"
+  aria-labelledby="facilities-title"
+  data-slot="facilities"
+  {...ed.entree}
+  style={styleDuBloc(Astro, "facilities")}
+>
+  <Pastilles cle="facilities" masquable />
+
+  <div class="container-page py-16 md:py-24">
+    <SectionHeader
+      as="h2"
+      edition={ed}
+      headingId="facilities-title"
+      eyebrow={isEn ? "Facilities" : "Fasilitas"}
+      title={isEn ? "Everything you need for a comfortable stay" : "Semua yang Anda butuhkan untuk menginap nyaman"}
+      accentWord={isEn ? "comfortable" : "nyaman"}
+      lede={
+        isEn
+          ? "A quick overview of the essentials and comfort features available during your stay."
+          : "Ikhtisar singkat tentang fasilitas penting dan kenyamanan yang tersedia selama menginap."
+      }
+    />
+
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      {
+        items.map((item, index) => (
+          <article
+            class="group rounded-card border border-border bg-card p-5 shadow-float transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.28)] md:p-6"
+            style={`animation-delay: ${index * 80}ms`}
+          >
+            <h3 class="font-display text-xl tracking-tight text-foreground md:text-2xl">{item.title}</h3>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              {item.details.map((detail) => (
+                <span class="rounded-pill border border-border bg-surface px-2.5 py-1 text-[11px] font-medium tracking-[0.02em] text-muted-foreground transition-colors duration-200 group-hover:border-primary/30 group-hover:text-foreground">
+                  {detail}
+                </span>
+              ))}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
