@@ -10,23 +10,19 @@
 // promesse qu'un billet ne tient pas juste en dessous.
 
 export const enPages = {
-  // --- Accueil -------------------------------------------------------------
   home: {
     metaTitle: "Olan Homestay | Comfortable & Strategic Accommodation in Lebak, Banten",
-    // La signature courte de la marque : elle allonge un titre de page trop court quand le titre de l'accueil le ferait depasser 60 caracteres (src/js/pageTitle.ts).
     titleSignature: "Olan Homestay, comfortable & strategic accommodation in Lebak, Banten",
     metaDescription:
       "Looking for a homestay in Lebak, Banten? Olan Homestay offers cozy rooms, a strategic location, and clear pricing. Check room availability via WhatsApp now!",
     eyebrow: "Olan Homestay",
-    heroTitle: "A calm place to rest, reconnect, and feel at home",
-    heroAccent: "rest",
+    heroTitle: "Comfortable Accommodation in Lebak, Banten",
+    heroAccent: "Comfortable",
     heroLede:
       "Comfortable rooms, family-friendly spaces, and a quiet atmosphere for easy weekend stays in Lebak.",
     heroPrimary: "Check availability",
     heroSecondary: "Explore the stay",
     heroRecent: "Latest stays",
-    // Les trois libelles du compteur du hero, dans l'ordre exact ou la page
-    // fournit les nombres : notes publiees, sujets, langues servies.
     heroLedger: ["guest stays", "family spaces", "easy access"],
     featuredEyebrow: "Recommended stay",
     latestTitle: "Comfort you can count on",
@@ -48,19 +44,15 @@ export const enPages = {
     aboutLede:
       "A family-friendly place to slow down, breathe easier, and enjoy a more comfortable kind of weekend getaway.",
     aboutCta: "How it feels to stay here",
-    /** Le surtitre et le second bouton de la scene filmee de l'accueil : leurs propres textes, distincts de la page A propos et du menu. */
     aboutEyebrow: "About",
     aboutContact: "Contact",
-    /** Le nom de la bande defilante des sujets, sous l'ouverture, pour les lecteurs d'ecran. */
     marqueeLabel: "Stay highlights",
   },
 
-  // --- A propos ------------------------------------------------------------
   about: {
     metaTitle: "About Olan Homestay",
     metaDescription:
       "A calm family homestay in Lebak with comfortable rooms, a welcoming atmosphere, and an easy stay for your next getaway.",
-    /** Le nom de la page dans le fil d'Ariane et son balisage : court, distinct du titre donne aux moteurs de recherche. */
     crumb: "About",
     eyebrow: "About",
     title: "A warm place to rest in Lebak",
@@ -101,14 +93,10 @@ export const enPages = {
     contactCta: "Contact us",
   },
 
-  // --- Contact -------------------------------------------------------------
-  // Le formulaire est complet et non monte : le theme ne choisit pas de
-  // prestataire d'envoi a la place de son utilisateur. La copie, elle, est prete.
   contact: {
     metaTitle: "Contact Olan Homestay",
     metaDescription:
       "Ask about room availability, family stays, and the best time to visit Olan Homestay in Lebak.",
-    /** Le nom de la page dans le fil d'Ariane et son balisage : court, distinct du titre donne aux moteurs de recherche. */
     crumb: "Contact",
     eyebrow: "Contact",
     title: "Ask about your stay",
@@ -139,21 +127,17 @@ export const enPages = {
     ],
   },
 
-  // --- Sujets --------------------------------------------------------------
   topics: {
     metaTitle: "Stay experiences",
     metaDescription:
       "Explore family spaces, comfort details, and the calm atmosphere at Olan Homestay.",
-    /** Le nom de la page dans le fil d'Ariane et son balisage : court, distinct du titre donne aux moteurs de recherche. */
     crumb: "Stay experiences",
-    /** Le surtitre de la page d'un sujet, distinct de celui de la liste des sujets. */
     pageEyebrow: "Stay",
     eyebrow: "Stay",
     title: "What makes a stay feel easy",
     accent: "easy",
     lede:
       "Every detail is designed to support comfort, family ease, and a calmer kind of weekend break.",
-    /** {count} vient du nombre d'articles publies dans le sujet. */
     countLabel: "{count} highlights",
     countOne: "1 highlight",
     readTopic: "Explore this topic",
@@ -162,12 +146,10 @@ export const enPages = {
     emptyLede: "New stay details will appear here when ready.",
   },
 
-  // --- Auteurs -------------------------------------------------------------
   authors: {
     metaTitle: "Meet the hosts",
     metaDescription:
       "Get to know the people behind Olan Homestay and the experience they create for every guest.",
-    /** Le nom de la page dans le fil d'Ariane et son balisage : court, distinct du titre donne aux moteurs de recherche. */
     crumb: "Hosts",
     eyebrow: "Hosts",
     title: "Meet the hosts",
@@ -184,14 +166,10 @@ export const enPages = {
     emptyLede: "This section will be filled as more stay experiences are added.",
   },
 
-  // --- Recherche -----------------------------------------------------------
-  // La recherche tourne dans le navigateur sur un index construit au build :
-  // zero requete, zero service tiers, et le theme reste 100% statique.
   search: {
     metaTitle: "Search Olan Homestay",
     metaDescription:
       "Search stay details, rooms, and family-friendly highlights for Olan Homestay.",
-    /** Le nom de la page dans le fil d'Ariane et son balisage : court, distinct du titre donne aux moteurs de recherche. */
     crumb: "Search",
     eyebrow: "Search",
     title: "Find what you need",
@@ -202,7 +180,6 @@ export const enPages = {
     label: "Search",
     shortcut: "Press / to search",
     clear: "Clear",
-    /** Affiche avant la premiere frappe. {count} est la taille de l'index. */
     prompt: "Start typing to search {count} items.",
     resultsLabel: "Search results",
     countLabel: "{count} results",
@@ -213,7 +190,6 @@ export const enPages = {
     noResultsCta: "Browse highlights",
   },
 
-  // --- 404 -----------------------------------------------------------------
   notFound: {
     metaTitle: "Page not found",
     metaDescription: "This page is not available right now. Please return to the home page.",
@@ -227,24 +203,16 @@ export const enPages = {
     searchCta: "Search",
   },
 
-  // --- Mentions legales ----------------------------------------------------
-  // La page /legal/ porte SON propre texte ici, parce qu'elle n'en a pas
-  // ailleurs : src/config/legalData.json.ts ne couvre que la confidentialite et
-  // les conditions. Les passages entre crochets sont a completer par l'utilisateur,
-  // et ce texte ne vaut pas un avis juridique.
   legal: {
-    /** Les noms des trois pages legales dans le fil d'Ariane, et le surtitre des deux documents : distincts des titres et de la page des mentions. */
     crumb: "Legal notice",
     privacyCrumb: "Privacy policy",
     termsCrumb: "Terms of use",
     privacyEyebrow: "Legal",
     termsEyebrow: "Legal",
-    /** La date de derniere revision des mentions legales (AAAA-MM-JJ). */
     updated: "2026-10-31",
     eyebrow: "Legal",
     title: "Legal notice",
     description: "Who publishes this site, who hosts it, and how to reach Olan Homestay.",
-    /** {date} est formatee par formatDate() dans la langue de la page. */
     lastUpdated: "Last updated on {date}",
     toc: "On this page",
     backToTop: "Back to top",

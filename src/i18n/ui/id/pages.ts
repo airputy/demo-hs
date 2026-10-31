@@ -5,8 +5,8 @@ export const idPages = {
     metaDescription:
       "Cari penginapan homestay di Lebak, Banten? Olan Homestay: kamar nyaman, lokasi strategis, tarif jelas. Cek kamar kosong lewat WhatsApp sekarang juga!",
     eyebrow: "Olan Homestay",
-    heroTitle: "Tempat yang tenang untuk beristirahat dan merasa seperti di rumah",
-    heroAccent: "tenang",
+    heroTitle: "Penginapan Nyaman di Lebak, Banten",
+    heroAccent: "Nyaman",
     heroLede:
       "Kamar nyaman, ruang keluarga yang praktis, dan suasana yang tenang untuk staycation ringan di Lebak.",
     heroPrimary: "Cek ketersediaan",
