@@ -5,10 +5,10 @@ export const idPages = {
     metaDescription:
       "Cari penginapan homestay di Lebak, Banten? Olan Homestay: kamar nyaman, lokasi strategis, tarif jelas. Cek kamar kosong lewat WhatsApp sekarang juga!",
     eyebrow: "Olan Homestay",
-    heroTitle: "Penginapan Nyaman di Lebak, Banten",
-    heroAccent: "Nyaman",
+    heroTitle: "Sewa Rumah Harian di Rangkasbitung, Lebak Banten",
+    heroAccent: "Rangkasbitung",
     heroLede:
-      "Kamar nyaman, ruang keluarga yang praktis, dan suasana yang tenang untuk staycation ringan di Lebak.",
+      "Homestay keluarga berupa satu rumah utuh yang privat dan tenang, untuk keluarga dan rombongan kecil. Harga Mulai dari Rp 750.000 per malam untuk satu rumah.",
     heroPrimary: "Cek ketersediaan",
     heroSecondary: "Lihat tempatnya",
     heroRecent: "Stay terbaru",
