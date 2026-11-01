@@ -50,7 +50,7 @@ export const enChrome = {
      *  precedents. */
     terms: "Terms",
     rights: "All rights reserved.",
-    builtWith: "Tulip Rangkas Residence No.491 Blok D14, Bojongleles, Kec. Cibadak, Kabupaten Lebak, Banten 42357.",
+    builtWith: "Address: Tulip Rangkas Residence No.491 Blok D14, Bojongleles, Kec. Cibadak, Kabupaten Lebak, Banten 42357.",
     themeBy: "Reef theme by",
     backToTop: "Back to top",
     /** Libelles accessibles des liens qui ne portent qu'une icone. */
