@@ -8,7 +8,7 @@ export const enDemo = {
   demo: {
     /** Le jeton {studio} porte le lien vers l'atelier : le dictionnaire n'a
      *  ainsi pas a contenir de HTML pour qu'un mot soit cliquable. */
-    notice: "Telephone: +62 878-7287-0289 (WhatsApp), Check Google Map {studio}.",
+    notice: "Telephone: (+62) 878-7287-0289 (WhatsApp), Check Google Map {studio}.",
     /** Nom de l'atelier, et libelle du lien. Un nom propre ne se traduit pas. */
     studio: "Olan Homestay",
   },
