@@ -161,7 +161,7 @@ export const idPages = {
       "Cari detail stay, kamar, dan sorotan ramah keluarga untuk Olan Homestay.",
     crumb: "Cari",
     eyebrow: "Cari",
-    title: "Semua yang Kamu butuhkan untuk menginap nyaman",
+    title: "Temukan yang Kamu butuhkan",
     accent: "butuhkan",
     lede:
       "Cari detail stay, catatan kamar, dan sorotan ramah keluarga tentang Olan Homestay.",
