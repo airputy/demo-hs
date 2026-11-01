@@ -30,7 +30,7 @@ export const idChrome = {
     privacy: "Privasi",
     terms: "Ketentuan",
     rights: "Hak cipta dilindungi.",
-    builtWith: "Dibuat dengan Astro, dengan Space Grotesk dan Instrument Sans.",
+    builtWith: "Alamat: Tulip Rangkas Residence No.491 Blok D14, Bojongleles, Kec. Cibadak, Kabupaten Lebak, Banten 42357.",
     themeBy: "Tema Reef oleh",
     backToTop: "Kembali ke atas",
     subscribeRss: "Berlangganan RSS",
