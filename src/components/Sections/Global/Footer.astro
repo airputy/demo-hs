@@ -60,7 +60,7 @@ const columns = getFooterData(locale).map((repli, rang) => {
       : repli.links.map((lien): { text: string; href: string; target?: string } => lien),
   };
 });
-const cible = (target?: string) => (target ? { target, rel: target === "_blank" ? "noopener" : undefined } : {});
+const cible = (target?: string) => (target ? { target, rel: target === "_blank" ? "noopener noreferrer" : undefined } : {});
 // L'adresse du service qui recoit les inscriptions (entree "site") : vide, le
 // formulaire reste une demonstration sans action, comme les fichiers le livrent.
 // La lettre d'information du back office quand elle est branchee,
@@ -228,7 +228,7 @@ const columnLink =
         <li>
           <a
             href="#content"
-            class="border-border text-muted-foreground hover:bg-muted hover:text-foreground rounded-pill inline-flex min-h-11 items-center gap-2 border px-4 text-sm transition-colors duration-150[...]
+            class="border-border text-muted-foreground hover:bg-muted hover:text-foreground rounded-pill inline-flex min-h-11 items-center gap-2 border px-4 text-sm transition-colors duration-150"
           >
             <Icon name="chevron-up" size={16} />
             {edition ? <span {...pied.champ("cta_secondary")}>{t.footer.backToTop}</span> : t.footer.backToTop}
