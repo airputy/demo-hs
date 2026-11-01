@@ -109,7 +109,7 @@ const demoNotice = noticeKey === "demo.notice" ? t.demo.notice : noticeKey;
 const [noticeBefore = "", noticeAfter = ""] = demoNotice.split("{studio}");
 // La boutique du theme, avec le prefixe de la langue courante : /fr/ en
 // francais, la racine en anglais. Jamais de domaine ecrit deux fois.
-const studioHref = "https://olanhomestay.com/";
+const studioHref = "https://share.google/MVSKFHq0ou07pVDVY";
 
 const columnLink =
   "text-muted-foreground hover:text-foreground inline-flex min-h-11 items-center text-[0.95rem] transition-colors duration-150";
@@ -193,7 +193,12 @@ const columnLink =
           demoNotice && (
             <p {...marqueInterface(Astro)}>
               {noticeBefore}
-              <a href={studioHref} class="text-foreground font-semibold hover:underline">
+              <a
+                href={studioHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-foreground font-semibold hover:underline"
+              >
                 {t.demo.studio}
               </a>
               {noticeAfter}
@@ -223,7 +228,7 @@ const columnLink =
         <li>
           <a
             href="#content"
-            class="border-border text-muted-foreground hover:bg-muted hover:text-foreground rounded-pill inline-flex min-h-11 items-center gap-2 border px-4 text-sm transition-colors duration-150"
+            class="border-border text-muted-foreground hover:bg-muted hover:text-foreground rounded-pill inline-flex min-h-11 items-center gap-2 border px-4 text-sm transition-colors duration-150[...]
           >
             <Icon name="chevron-up" size={16} />
             {edition ? <span {...pied.champ("cta_secondary")}>{t.footer.backToTop}</span> : t.footer.backToTop}
