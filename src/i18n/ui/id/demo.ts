@@ -2,7 +2,7 @@
 
 export const idDemo = {
   demo: {
-    notice: "Situs ini adalah demo tema Reef, dibuat oleh {studio}.",
+    notice: "Telepon: (+62) 878-7287-0289 (WhatsApp), Lihat di Google Map {studio}.",
     studio: "Olan Homestay",
   },
 } as const;
