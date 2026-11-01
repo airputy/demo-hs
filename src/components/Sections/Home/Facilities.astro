@@ -55,7 +55,7 @@ const items = isEn
       edition={ed}
       headingId="facilities-title"
       eyebrow={isEn ? "Facilities" : "Fasilitas"}
-      title={isEn ? "Everything you need for a comfortable stay" : "Semua yang Anda butuhkan untuk menginap nyaman"}
+      title={isEn ? "Everything you need for a comfortable stay" : "Semua yang Kamu butuhkan untuk menginap nyaman"}
       accentWord={isEn ? "comfortable" : "nyaman"}
       lede={
         isEn
@@ -68,7 +68,7 @@ const items = isEn
       {
         items.map((item, index) => (
           <article
-            class="group rounded-card border border-border bg-card p-5 shadow-float transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.28)] md:p-6"
+            class="group rounded-card border border-border bg-card p-5 shadow-float transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.12)]"
             style={`animation-delay: ${index * 80}ms`}
           >
             <h3 class="font-display text-xl tracking-tight text-foreground md:text-2xl">{item.title}</h3>
