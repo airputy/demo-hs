@@ -8,7 +8,7 @@ export const idChrome = {
     contact: "Kontak",
     authors: "Penulis",
     search: "Cari",
-    brandHome: "Reef Notes, kembali ke beranda",
+    brandHome: "Olan Homestay, kembali ke beranda",
     mainLabel: "Utama",
     mobileLabel: "Seluler",
     openMenu: "Buka menu",
@@ -20,7 +20,7 @@ export const idChrome = {
 
   footer: {
     tagline:
-      "Reef Notes adalah buku catatan kerja studio web tiga orang. Catatan build, waktu muat, specimen huruf, dan bagian dari kerja lepas yang tidak pernah ada di landing page.",
+      "Olan Homestay adalah penginapan di pusat kota Rangkasbitung, Lebak, Banten. Kamar bersih, dekat stasiun dan alun-alun, cocok untuk menginap dan transit sebelum ke Baduy atau Sawarna.",
     colRead: "Baca",
     colStudio: "Studio",
     colLegal: "Hukum",
