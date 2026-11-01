@@ -32,7 +32,8 @@ type Props = {
 };
 
 // La lettre peut etre masquee dans le back office (champ "hidden" de l'entree "lettre").
-const newsletter = (Astro.props as Props).newsletter !== false && blocVisible(Astro, "lettre");
+// Desactive globalement pour ce site : le bloc d'inscription n'est pas affiche dans le footer.
+const newsletter = false;
 
 const locale = getLocale(Astro);
 const t = useTranslations(Astro);
@@ -42,7 +43,7 @@ const lettre = annotationsDe(Astro, "lettre");
 const site = annotationsDe(Astro, "site");
 const edition = enEdition(Astro);
 const routes = getSiteRoutes(locale);
-// Moteur allume : le nom et le logo viennent des reglages du site, l'adresse
+// Moteur allume : le nom et les reseaux du site, l'adresse
 // e-mail et le credit de l'entree "site" de la langue, chaque colonne d'un menu
 // du back office (son libelle est le titre de la colonne), et les phrases de
 // l'entree "pied-de-page". Le pied vient apres <main> : il porte ses
@@ -140,63 +141,6 @@ const columnLink =
         <p class="text-muted-foreground measure-prose text-[0.95rem] leading-relaxed" {...pied.champ("lede")}>
           {t.footer.tagline}
         </p>
-
-        {
-          newsletter && (
-            <section class="flex flex-col gap-3" id="newsletter" aria-labelledby="newsletter-title" {...lettre.entree} style={styleDuBloc(Astro, "lettre")}>
-              <Pastilles cle="lettre" masquable enLigne />
-              <h2 id="newsletter-title" class="font-display text-xl font-bold tracking-tight" {...lettre.champ("title")}>
-                {word ? (
-                  <Fragment>
-                    {before}
-                    <span class="accent-script" {...lettre.champ("accent")}>{word}</span>
-                    {after}
-                  </Fragment>
-                ) : (
-                  title
-                )}
-              </h2>
-              <p class="text-muted-foreground text-sm leading-relaxed" {...lettre.champ("lede")}>{t.newsletter.lede}</p>
-              {envoiDeLettre?.avis && (
-                <p id="lettre-avis" role="status" class="border-border bg-background rounded-card text-foreground flex items-start gap-2 border p-5 text-sm leading-relaxed">
-                  <Icon name={envoiDeLettre.avis.ton === "succes" ? "check-circle" : "info"} size={17} class="mt-0.5 shrink-0" />
-                  {envoiDeLettre.avis.texte}
-                </p>
-              )}
-              <form class="mt-1 flex flex-col gap-3 sm:flex-row" name="newsletter" {...envoiLettre}>
-                {envoiDeLettre && (
-                              <Fragment>
-                                <input type="hidden" name="retour" value={envoiDeLettre.caches.retour} />
-                                <input type="hidden" name="langue" value={envoiDeLettre.caches.langue} />
-                                <div class="sr-only" aria-hidden="true">
-                                  <input type="text" name={envoiDeLettre.caches.piege} tabindex="-1" autocomplete="off" />
-                                </div>
-                              </Fragment>
-                            )}
-                <label class="sr-only" for="footer-newsletter-email">
-                  {t.newsletter.emailLabel}
-                </label>
-                <Input
-                  id="footer-newsletter-email"
-                  class="sm:flex-1"
-                  type="email"
-                  name="email"
-                  placeholder={t.newsletter.placeholder}
-                  autocomplete="email"
-                  spellcheck="false"
-                  aria-describedby="footer-newsletter-note"
-                  required
-                />
-                <Button type="submit" variant="primary" class="sm:shrink-0" {...lettre.champ("cta")}>
-                  {t.newsletter.submit}
-                </Button>
-              </form>
-              <p id="footer-newsletter-note" class="text-muted-foreground text-xs" {...lettre.champ("note")}>
-                {t.newsletter.note}
-              </p>
-            </section>
-          )
-        }
       </div>
 
       <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8 lg:col-start-5">
