@@ -20,7 +20,7 @@ export const enChrome = {
     authors: "Authors",
     search: "Search",
     /** Libelle accessible du lien qui ramene le titre du blog a l'accueil. */
-    brandHome: "Reef Notes, back to the home page",
+    brandHome: "Olan Homestay, back to the home page",
     /** Les deux <nav> de la page portent un nom : sans lui, un lecteur d'ecran
      *  annonce "navigation" deux fois et ne dit pas laquelle des deux. */
     mainLabel: "Main",
@@ -37,7 +37,7 @@ export const enChrome = {
   // qui aligne six colonnes copie un SaaS et sert d'egout a liens morts.
   footer: {
     tagline:
-      "Reef Notes is the working notebook of a three-person web studio. Build logs, load times, type specimens, and the parts of freelancing nobody puts on a landing page.",
+      "Olan Homestay is a guesthouse in the heart of Rangkasbitung, Lebak, Banten. It offers clean rooms close to the train station and the town square, making it a great choice for a stay or a stopover on the way to Baduy or Sawarna.",
     colRead: "Read",
     colStudio: "The studio",
     colLegal: "Legal",
