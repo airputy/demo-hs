@@ -58,7 +58,7 @@ const posts = await getResolvedPosts(locale);
 // compter les autres fichiers, mais la page les voit tous. Si personne n'a
 // leve le drapeau, le plus recent prend la place.
 const featured = posts.find((entry) => entry.post.data.featured) ?? posts.at(0);
-const latest = posts.filter((entry) => entry !== featured).slice(0, 6);
+const latest = posts.filter((entry) => entry !== featured).slice(0, 3);
 
 const topics = await getSortedTopics(locale);
 const authors = await getSortedAuthors(locale);
