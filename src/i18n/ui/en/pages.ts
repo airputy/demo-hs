@@ -19,7 +19,7 @@ export const enPages = {
     heroTitle: "Private House Rental in Rangkasbitung, Lebak Banten",
     heroAccent: "Rangkasbitung",
     heroLede:
-      "A family homestay offering an entire private, peaceful house for families and small groups. Rates start from IDR 750,000 per night for the whole house.",
+      "A private, peaceful family homestay for families and small groups. Rates start from IDR 750,000 per night for the whole house.",
     heroPrimary: "Check availability",
     heroSecondary: "Explore the House",
     heroRecent: "Latest stays",
