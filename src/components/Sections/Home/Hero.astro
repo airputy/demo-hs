@@ -22,7 +22,7 @@
 // La scene reste sombre dans les deux themes (.deep-scene, voir global.css).
 // Un cadre qui blanchit en mode clair perd ses halos et ses lueurs de bordure :
 // il perd donc l'image, et le premier ecran redevient une page de texte.
-import heroVague from "../../../assets/reef-hero-vague.webp";
+import heroImage from "../../../assets/olan-homestay-tampak-depan-rangkasbitung.webp";
 import { Icon } from "@components/svg/icons";
 import { Button } from "@components/ui/button";
 import { getSiteRoutes } from "@config/navData.json.ts";
@@ -59,6 +59,7 @@ const at = title.toLowerCase().indexOf(accent.toLowerCase());
 const before = at >= 0 ? title.slice(0, at) : title;
 const word = at >= 0 ? title.slice(at, at + accent.length) : "";
 const after = at >= 0 ? title.slice(at + accent.length) : "";
+const heroAlt = "Tampak depan rumah sewa harian Olan Homestay di Rangkasbitung, Lebak (ID) / Front of Olan Homestay, a private house rental in Rangkasbitung, Lebak (EN)";
 ---
 
 {/* Le fond de page sur lequel la scene est posee. C'est lui qui fait exister le
@@ -120,22 +121,21 @@ const after = at >= 0 ? title.slice(at + accent.length) : "";
         />
       ) : (
         <Picture
-          src={heroVague}
+          src={heroImage}
           formats={["avif"]}
           fallbackFormat="webp"
-          alt=""
+          alt={heroAlt}
           widths={[720, 800, 1200, 1440, 1920, 2560]}
           sizes="100vw"
           loading="eager"
           fetchpriority="high"
           quality={75}
           class="pointer-events-none absolute inset-0 size-full object-cover object-[center_62%]"
-          aria-hidden="true"
           {...ed.champ("image")}
         />
       )
     }
-    <Pastilles cle="hero" liens={[["cta_link", routes.posts], ["cta_secondary_link", routes.about]]} images={[{ champ: "image", sorte: "photo" }]} masquable bas />
+    <Pastilles cle="hero" liens={[['cta_link', routes.posts], ['cta_secondary_link', routes.about]]} images={[{ champ: 'image', sorte: 'photo' }]} masquable bas />
 
     {/* Voile de lecture, en deux couches et pas une.
         Reglage trouve en trois essais, et les deux ratages valent d'etre notes
@@ -157,7 +157,7 @@ const after = at >= 0 ? title.slice(at + accent.length) : "";
     {/* PAS DE HALO. Deux nappes floues derivaient ici, l'une sur l'accent en
         haut a droite, l'autre sur le primaire en bas a gauche. Le commentaire
         qui vivait a cet endroit disait deja qu'elles salissaient la
-        photographie et les gardait quand meme : c'est la signature exacte des
+        photographie et les gardaient quand meme : c'est la signature exacte des
         pages fabriquees a la chaine, et la regle de la maison l'interdit
         desormais dans toute la famille.
 
