@@ -28,11 +28,11 @@ export const idPages = {
     authorsLede:
       "Setiap stay dibuat dengan fokus pada kenyamanan, kemudahan, dan momen tenang yang membuat tamu ingin kembali.",
     authorsCta: "Temui tuan rumah",
-    aboutTitle: "Homestay yang terasa hangat di jantung Lebak",
-    aboutAccent: "hangat",
+    aboutTitle: "Tentang Olan Homestay di Cibadak, Rangkasbitung",
+    aboutAccent: "Olan",
     aboutLede:
-      "Tempat yang ramah untuk keluarga, santai, dan menikmati liburan akhir pekan yang lebih nyaman dan tenang.",
-    aboutCta: "Bagaimana rasanya tinggal di sini",
+      "Olan Homestay berada di Kecamatan Cibadak, Kabupaten Lebak, di kawasan Rangkasbitung, dan menjadi titik awal yang praktis untuk menjelajahi Lebak, termasuk Baduy. Saya, Oke Harida, mengelolanya langsung agar keluarga yang berkunjung ke Lebak, Banten, punya tempat menginap yang terurus dan mudah dihubungi. Untuk pemesanan dan petunjuk arah, kamu bisa langsung chat saya lewat WhatsApp.",
+    aboutCta: "Kenali Olan Homestay",
     aboutEyebrow: "Tentang",
     aboutContact: "Kontak",
     marqueeLabel: "Sorotan stay",
