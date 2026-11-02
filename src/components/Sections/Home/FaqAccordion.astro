@@ -12,56 +12,66 @@ const isEn = locale === "en";
 const faqs = isEn
   ? [
       {
-        question: "Is Olan Homestay suitable for families?",
+        question: "How much does the house cost per night?",
         answer:
-          "Yes. Olan Homestay is designed for relaxed family stays, with comfortable rooms, practical facilities, and a calm atmosphere that makes it easy to unwind.",
+          "Rates start from IDR 750,000 per night for the whole house. Send your dates on WhatsApp and I will confirm the exact price.",
       },
       {
-        question: "Is it a good choice for a weekend getaway?",
+        question: "How many guests can stay?",
         answer:
-          "Absolutely. It is ideal for short escapes, quiet rest, and enjoying a simple, comfortable stay without the stress of a crowded destination.",
+          "The house sleeps up to 6 guests, with 2 bedrooms and 1 bathroom.",
       },
       {
-        question: "Is there a pool area for children?",
+        question: "Do we rent the whole house?",
         answer:
-          "Yes. The pool area is a family-friendly space where children can enjoy a comfortable and safe place to play while parents relax nearby.",
+          "Yes. You rent the entire house, so you do not share it with other guests.",
       },
       {
-        question: "Is the location easy to reach?",
+        question: "How do I book, and is a deposit required?",
         answer:
-          "Yes. Olan Homestay is easy to access for quick family trips or peaceful weekend stays in the Lebak area.",
+          "Message me on WhatsApp with your dates and number of guests, and I will check availability and confirm.",
       },
       {
-        question: "Is the place clean and comfortable?",
+        question: "What are the check-in and check-out times?",
         answer:
-          "Yes. Cleanliness and comfort are a priority, so guests can enjoy a calm and restful experience from check-in to check-out.",
+          "Check-in is after 2:00 PM and check-out is before 12:00 PM.",
+      },
+      {
+        question: "Where is Olan Homestay?",
+        answer:
+          "At Tulip Rangkas Residence, Bojongleles, Cibadak District, Lebak Regency, Banten. Use Google Maps or ask me on WhatsApp for directions.",
       },
     ]
   : [
       {
-        question: "Apakah Olan Homestay cocok untuk keluarga?",
+        question: "Berapa harga sewa rumah per malam?",
         answer:
-          "Ya. Olan Homestay dirancang untuk menginap keluarga yang santai, dengan kamar nyaman, fasilitas yang praktis, dan suasana tenang yang membuat pengunjung lebih mudah bersantai.",
+          "Harga mulai dari Rp 750.000 per malam untuk satu rumah utuh. Kirim tanggal menginap lewat WhatsApp, lalu saya akan konfirmasi harga yang tepat.",
       },
       {
-        question: "Apakah cocok untuk liburan akhir pekan?",
+        question: "Berapa maksimal tamu yang bisa tinggal?",
         answer:
-          "Sangat cocok. Tempat ini ideal untuk liburan singkat, beristirahat dengan tenang, dan menikmati menginap yang nyaman tanpa rasa terburu-buru.",
+          "Rumah ini bisa menampung sampai 6 tamu, dengan 2 kamar tidur dan 1 kamar mandi.",
       },
       {
-        question: "Apakah ada area kolam untuk anak-anak?",
+        question: "Apakah yang disewa adalah rumah utuh?",
         answer:
-          "Ya. Area kolam dibuat untuk keluarga, sehingga anak-anak bisa bermain dengan aman dan nyaman sambil orang tua bersantai di dekatnya.",
+          "Ya. Kamu menyewa seluruh rumah, jadi tidak berbagi dengan tamu lain.",
       },
       {
-        question: "Apakah lokasinya mudah dijangkau?",
+        question: "Cara booking dan apakah ada uang muka?",
         answer:
-          "Ya. Olan Homestay mudah dijangkau untuk perjalanan keluarga singkat maupun staycation akhir pekan di area Lebak.",
+          "Kirim pesan lewat WhatsApp dengan tanggal dan jumlah tamu, lalu saya akan cek ketersediaan dan konfirmasi.",
       },
       {
-        question: "Apakah tempat ini bersih dan nyaman?",
+        question: "Jam check-in dan check-out berapa?",
         answer:
-          "Ya. Kebersihan dan kenyamanan menjadi prioritas, sehingga tamu bisa menikmati pengalaman menginap yang tenang dan menyenangkan.",
+          "Check-in setelah pukul 14.00 dan check-out sebelum pukul 12.00 siang.",
+      },
+      {
+        question: "Dimana lokasi Olan Homestay?",
+        answer:
+          "Lokasinya di Tulip Rangkas Residence, Bojongleles, Kecamatan Cibadak, Kabupaten Lebak, Banten. Kamu bisa pakai Google Maps atau tanya saya lewat WhatsApp untuk arah yang lebih jelas.",
       },
     ];
 ---
@@ -86,7 +96,7 @@ const faqs = isEn
       lede={
         isEn
           ? "Quick answers to what guests ask most before booking."
-          : "Jawaban singkat untuk hal yang paling sering ditanyakan sebelum kamu memesan.."
+          : "Jawaban singkat untuk hal yang paling sering ditanyakan sebelum kamu memesan."
       }
     />
 
