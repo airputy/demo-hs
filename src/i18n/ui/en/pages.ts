@@ -40,7 +40,7 @@ export const enPages = {
       "Every stay is shaped around comfort, convenience, and quiet moments that make guests want to come back.",
     authorsCta: "Meet the hosts",
     aboutTitle: "About Olan Homestay in Cibadak, Rangkasbitung",
-    aboutAccent: "Olan",
+    aboutAccent: "Olan Homestay",
     aboutLede:
       "Olan Homestay is in Cibadak District, Lebak Regency, in the Rangkasbitung area, and makes a practical starting point for exploring Lebak, including Baduy. I'm Oke Harida, and I run it myself so that families visiting Lebak, Banten, have a well-kept place to stay and someone easy to reach. For bookings and directions, just message me on WhatsApp.",
     aboutCta: "Get to Know Olan Homestay",
