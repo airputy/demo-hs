@@ -10,7 +10,7 @@ export const idPages = {
     heroLede:
       "Homestay keluarga berupa satu rumah utuh yang privat dan tenang, untuk keluarga dan rombongan kecil. Harga Mulai dari Rp 750.000 per malam untuk satu rumah.",
     heroPrimary: "Cek ketersediaan",
-    heroSecondary: "Lihat tempatnya",
+    heroSecondary: "Lihat Rumahnya",
     heroRecent: "Stay terbaru",
     heroLedger: ["menginap tamu", "ruang keluarga", "akses mudah"],
     featuredEyebrow: "Pilihan utama",
