@@ -12,7 +12,7 @@ export const idPages = {
     heroPrimary: "Cek ketersediaan",
     heroSecondary: "Lihat Rumahnya",
     heroRecent: "Stay terbaru",
-    heroLedger: ["maksimal tamu", "kamar tidur", "rumah utuh private"],
+    heroLedger: ["maksimal tamu", "kamar tidur", "rumah utuh"],
     featuredEyebrow: "Pilihan utama",
     latestTitle: "Kenyamanan yang bisa diandalkan",
     latestAccent: "Kenyamanan",
