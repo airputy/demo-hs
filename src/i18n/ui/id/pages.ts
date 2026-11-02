@@ -8,7 +8,7 @@ export const idPages = {
     heroTitle: "Sewa Rumah Harian di Rangkasbitung, Lebak Banten",
     heroAccent: "Rangkasbitung",
     heroLede:
-      "Homestay keluarga berupa satu rumah utuh yang privat dan tenang, untuk keluarga dan rombongan kecil. Harga Mulai dari Rp 750.000 per malam untuk satu rumah.",
+      "Homestay keluarga yang privat dan tenang, untuk keluarga dan rombongan kecil. Harga mulai dari Rp 750.000 per malam untuk satu rumah.",
     heroPrimary: "Cek ketersediaan",
     heroSecondary: "Lihat Rumahnya",
     heroRecent: "Stay terbaru",
