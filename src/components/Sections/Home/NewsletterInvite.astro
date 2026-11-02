@@ -39,8 +39,8 @@ const routes = getSiteRoutes(locale);
 const photo = imageDe(Astro, "lettre");
 const bookingHref = lienDe(Astro, "lettre-flux", "cta_link") ?? routes.contact;
 
-const title = isEn ? "Your stay starts here" : "Liburan Kamu dimulai di sini";
-const accent = isEn ? "stay" : "di sini";
+const title = isEn ? "Check Availability at Olan Homestay" : "Cek Ketersediaan Olan Homestay";
+const accent = isEn ? "Availability" : "Ketersediaan";
 const at = title.toLowerCase().indexOf(accent.toLowerCase());
 const before = at >= 0 ? title.slice(0, at) : title;
 const word = at >= 0 ? title.slice(at, at + accent.length) : "";
@@ -49,8 +49,8 @@ const after = at >= 0 ? title.slice(at + accent.length) : "";
 const primaryLabel = isEn ? "Check availability" : "Cek ketersediaan";
 const secondaryLabel = isEn ? "Plan your stay" : "Rencanakan menginap";
 const note = isEn
-  ? "Check in after 2:00 PM  Check out before 12:00 PM, a family-friendly stay, and a smooth welcome from the moment you arrive."
-  : "Check in after 2:00 PM, Check out before 12:00 PM, pengalaman menginap yang nyaman, dan sambutan hangat sejak kedatangan Kamu.";
+  ? "Just send your dates and number of guests, no form needed."
+  : "Cukup kirim tanggal dan jumlah tamu, tanpa formulir.";
 const cardTitle = isEn ? "Plan your stay" : "Rencanakan menginap";
 const cardLede = isEn
   ? "Choose your dates, confirm your room, and let us take care of the rest."
