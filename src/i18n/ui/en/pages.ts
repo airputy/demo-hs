@@ -23,7 +23,7 @@ export const enPages = {
     heroPrimary: "Check availability",
     heroSecondary: "Explore the House",
     heroRecent: "Latest stays",
-    heroLedger: ["guest stays", "family spaces", "easy access"],
+    heroLedger: ["max guests", "bedrooms", "private whole house"],
     featuredEyebrow: "Recommended stay",
     latestTitle: "Comfort you can count on",
     latestAccent: "Comfort",
