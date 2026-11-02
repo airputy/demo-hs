@@ -25,10 +25,10 @@ export const enPages = {
     heroRecent: "Latest stays",
     heroLedger: ["max guests", "bedrooms", "whole house"],
     featuredEyebrow: "Recommended stay",
-    latestTitle: "Comfort you can count on",
+    latestTitle: "Stay and Travel Guides for Lebak",
     latestAccent: "Comfort",
-    latestLede: "Simple, clean, and welcoming spaces designed for family trips and quiet weekend escapes.",
-    latestCta: "See all stays",
+    latestLede: "Practical tips for planning a family trip to Lebak, from rates to routes.",
+    latestCta: "See all articles",
     topicsTitle: "The experience you can expect",
     topicsAccent: "experience",
     topicsLede:
