@@ -16,12 +16,12 @@ export const enPages = {
     metaDescription:
       "Looking for a homestay in Lebak, Banten? Olan Homestay offers cozy rooms, a strategic location, and clear pricing. Check room availability via WhatsApp now!",
     eyebrow: "Olan Homestay",
-    heroTitle: "Comfortable Accommodation in Lebak, Banten",
-    heroAccent: "Comfortable",
+    heroTitle: "Private House Rental in Rangkasbitung, Lebak Banten",
+    heroAccent: "Rangkasbitung",
     heroLede:
-      "Comfortable rooms, family-friendly spaces, and a quiet atmosphere for easy weekend stays in Lebak.",
+      "A family homestay offering an entire private, peaceful house for families and small groups. Rates start from IDR 750,000 per night for the whole house.",
     heroPrimary: "Check availability",
-    heroSecondary: "Explore the stay",
+    heroSecondary: "Explore the House",
     heroRecent: "Latest stays",
     heroLedger: ["guest stays", "family spaces", "easy access"],
     featuredEyebrow: "Recommended stay",
