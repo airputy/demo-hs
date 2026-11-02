@@ -17,7 +17,7 @@ export const idPages = {
     latestTitle: "Panduan Menginap dan Wisata di Lebak",
     latestAccent: "Wisata",
     latestLede: "Info praktis untuk merencanakan liburan keluarga ke Lebak, dari harga sampai rute.",
-    latestCta: "Lihat semua kamar",
+    latestCta: "Lihat semua artikel",
     topicsTitle: "Pengalaman yang bisa Kamu harapkan",
     topicsAccent: "pengalaman",
     topicsLede:
